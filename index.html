@@ -1,22 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My page</title>
+	<title>qa_start_up_vahapova</title>
 	<meta charset="utf-8">
-	<style type="text/css"></style>
+	<style type="text/css">
+		.content{
+			width: 60%;
+			margin: auto;
+		}
+		.header{
+			height: 50px;
+			background-color: gray;
+		}
+		.conteiner{
+			display: flex;}
+		#left{
+			width: 20%;
+			background-color: blue;}
+		#right{
+			width: 80%;
+			background-color: white;}
+		.photo {
+			width: 200px;
+			height: 200px;
+			background-image: url(photo.jpg);
+			background-size: cover;
+			border-width:1px;
+			border-color: white;
+			border-radius: 25%;
+		}
+		#right li{
+			list-style-type: none;
+		}
+		#right li:before{ 
+			content: "-";
+		}
+		#right .text{
+			border-bottom: 2px solid blue;
+			color:blue;
+			margin-left: 2%;
+			margin-right: 3%;s
+		}
+	</style>
 </head>
 <body>
-	<h4>Первая страница </h4>
-	<h1>Hello</h1>
-	<p>Здесь текст<br>текст
-	</p>
-	<pre> <i>yhgbh</i>
-		<b>jhjbjb
-			<i>nen</i>
-		</b>
-		ygd 
-		hggg
-		 			kddk
-	</pre>
+	<div class="content">
+		<div class="header"><h1>Curriculum vitae</h1></div>
+		<div class="conteiner">
+			<div id="left"> 
+				<div class="photo"></div>
+				<div class="name">Виктория Агапова</div>
+			</div>
+			<div id="right"> 
+				<div class="text">
+					<h2>Дата рождения</h2>
+					<p>21 июля 1996г</p>
+					<h2>Место рождения</h2>
+					<p>г. Днепропетровск </p>
+				</div>
+				<div class="text">
+					<h2>Soft Skills:</h2>
+					<ul>
+						<li>Photoshop</li>
+						<li>Word</li>
+						<li>Paint</li>
+					</ul>
+				</div>
+				<div class="text">
+					<h2>Обо мне</h2>
+					<ul>
+						<li>не пью</li>
+						<li>не курю</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
