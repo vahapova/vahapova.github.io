@@ -4,7 +4,7 @@
 	<title>qa_start_up_vahapova</title>
 	<meta charset="utf-8">
 	<style type="text/css">
-		.content{
+		#content{
 			width: 50%;
 			max-width: 1200px;
 			min-width: 1000px;
@@ -13,14 +13,14 @@
 			font-family: Geneva, Arial, Helvetica, sans-serif;
 			color: #f8fffc;
 		}
-		.header{
+		#header{
 			height: 70px;
 			background: linear-gradient(to right, #3e4f57, #3a505d);
 			text-align: center;
 			padding: 8px;
 		}
 		
-		.conteiner{
+		#conteiner{
 			display: flex;
 		}
 		#left{
@@ -86,14 +86,15 @@
 		#left h2{
 			text-decoration: underline;
 		}
-		.like {
-			margin-left: 2%;
-		}
 		.one,.two,.three {
 			border-radius: 50px;
-			margin-bottom: 5px;
+			margin-bottom: 2px;
 			text-decoration: none;
 			font-size: 10px;
+			padding: 3px;
+		}
+		#left table{
+			width:100%;
 		}
 		.one {
 			width: 65%;
@@ -123,26 +124,24 @@
 		</style>
 </head>
 <body>
-	<div class="content">
-		<div class="header"><h1>Curriculum vitae</h1></div>
-		<div class="conteiner">
+	<div id="content">
+		<div id="header"><h1>Curriculum vitae</h1></div>
+		<div id="conteiner">
 			<div id="left"> 
 				<div class="photo"></div>
 				<div class="name">Виктория Агапова</div>
 				<div class="like"><h2>Люблю:</h2>
-					<table class="one">
+					<table>
 						<tr>
-							<td>Собак</td>
+							<td>
+								<div class="one">Собак</div>
+							</td>
 						</tr>
-					</table>
-					<table class="two">
 						<tr>
-							<td>Кушать</td>
+							<td><div class="two">Кушать</div></td>
 						</tr>
-					</table>
-					<table class="three">
 						<tr>
-							<td>Спать</td>
+							<td><div class="three">Спать</div></td>
 						</tr>
 					</table>
 				</div>
